@@ -1,0 +1,538 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Gotham Pro", sans-serif;
+    overflow-x: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    justify-content: center;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#form-search {
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#query {
+    all: unset;
+    font: 16px system-ui;
+    color: #000000;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+.button-search {
+    background-color: #fff;
+    border: none;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+ul.menu {
+    background-color: #fff;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    max-width: 1150px;
+    width: 100%;
+    position: relative;
+}
+
+ul.menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+ul.menu li a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+ul.menu li a:hover {
+    color: lightgray;
+}
+
+ul.menu a img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+ul.menu .logo {
+    position: absolute;
+    left: 20px;
+}
+
+.mainphoto {
+    background-image: url('img/fonstroit.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    display: flex;
+    justify-content: right;
+    background-attachment: fixed
+}
+
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.mainbutton {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.mainbutton:hover {
+    background-color: lightgray;
+}
+
+.overlay {
+    padding: 100px 60px;
+    text-align: left;
+    color: white;
+    max-width: 600px;
+}
+
+.advantages_pole {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage_element h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.content-container {
+    padding: 0px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.icon-advantage {
+    height: 2rem;
+    margin-bottom: 0.1rem;
+}
+
+.advantage_subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.advantage_content {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.advantage_content p {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+
+.read-work {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-works {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.work-photo {
+    flex: 1;
+    max-width: 60%;
+}
+
+.work-photo img {
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+.description-work {
+    padding-left: 20px;
+}
+
+.work-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 0.4rem;
+    border: none;
+    width: 10rem;
+}
+
+.description {
+    max-width: 30rem;
+    font-size: 1rem;
+}
+
+.title-description {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.name {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.contact {
+    margin: 3rem 5rem;
+    justify-content: center;
+}
+
+.contact label {
+    font-size: 1.0rem;
+}
+
+.labelname {
+    display: block;
+}
+
+.phoneguest {
+    margin: 10px 0;
+}
+
+.nameguest {
+    display: block;
+}
+
+.textform {
+    padding: 10px 0 0 5rem;
+    line-height: 1.5rem;
+}
+
+.form {
+    margin: 5rem 0;
+}
+
+.contactguest {
+    background-color: #FFC107;
+    border-radius: 2rem;
+    height: 50vh;
+    max-width: 1200px;
+    align-items: center;
+    width: 100%;
+    display: block;
+    justify-content: left;
+    align-items: center;
+}
+
+.button-form-send {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    border: none;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.button-form-send:hover {
+    border: 1px solid #000000;
+}
+
+.text-form {
+    font-size: 2.3rem;
+}
+
+.text-form-mini {
+    font-size: 1.3rem;
+}
+
+.footerinf {
+    height: 25vh;
+    width: 100%;
+}
+
+.footerme {
+    width: 100%;
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0px;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.footermenu li {
+    list-style: none;
+    padding: 10px;
+}
+
+.footerinformaiton p {
+    font-size: 1.2rem;
+
+}
+
+.footermenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-menu-li a:hover {
+    color: lightgray;
+}
+
+.footerinformaiton {
+    font-size: 10rem;
+}
+
+.mediafooter p{
+    margin: 0.2rem;
+}
+
+.mediafooter a {
+    cursor: pointer;
+}
+
+.gallerywork {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.gallerywork h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    justify-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 430px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+    .logo {
+        display: none;
+    }
+
+    .mainbutton {
+        padding: 10px 20px;
+        font-size: 2rem;
+    }
+
+    .mainphoto {
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .overlay {
+        padding: 50px 30px;
+        max-width: 100%;
+    }
+
+
+    .advantage_element h2 {
+        font-size: 2rem;
+    }
+
+    .advantage_subtitle {
+        font-size: 1.5rem;
+    }
+
+    .advantage_content {
+        font-size: 0.9rem;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .icon-advantage {
+        height: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .advantage_content p {
+        max-width: 100%; 
+    }
+
+    .content-container {
+        padding: 20px;
+    }
+
+    .work-photo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .description-work,
+    .description {
+        padding-left: 0;
+        margin-top: 10px;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9rem;
+    }
+
+    .footerinformaiton p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .mediafooter p {
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+
+     .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+    }
+
+    .gallerywork h1 {
+        font-size: 2rem;
+    }
+
+    .name, .button-form-send {
+        width: 100%; 
+        height: 2.2rem;
+    }
+
+    .textform {
+        padding: 10px 0;
+    }
+
+    .contact {
+        margin: 1rem;
+    }
+
+    .text-form {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .text-form-mini {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .contactguest {
+        
+        border-radius: 1rem;
+    }
+
+}
+
+
+
+    
